@@ -1,0 +1,348 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Profiles</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css"/>
+  <link rel="stylesheet" href="profiles.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Profiles (Local DB)</h1>
+
+    <!-- Auto Detect Settings -->
+    <div class="card mb14">
+      <h2>Settings</h2>
+
+      <div class="settingsList">
+        <div class="settingBox">
+          <div class="toggleRow">
+            <div class="toggleText">Auto Detect</div>
+            <label class="switch">
+              <input type="checkbox" id="autoDetectToggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="toggleNote">Run Auto Fill automatically when a selected drug changes.</div>
+        </div>
+
+        <div class="settingBox">
+          <div class="toggleRow">
+            <div class="toggleText">Auto-Focus Drug</div>
+            <label class="switch">
+              <input type="checkbox" id="autoFocusToggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="toggleNote">Focus the next drug field after save to speed up next entry.</div>
+        </div>
+
+        <div class="settingBox">
+          <div class="toggleRow">
+            <div class="toggleText">Entry Speed</div>
+          </div>
+          <div class="speedControl">
+            <div class="speedLabelRow">
+              <span id="profileSpeedValue" class="speedBadge">Medium</span>
+            </div>
+            <div class="speedSliderRow">
+              <label>Slow</label>
+              <input id="profileSpeedSlider" type="range" min="1" max="5" value="3" class="timing-slider" />
+              <label>Fast</label>
+            </div>
+            <div class="speedInfo"><small id="profileSpeedDetails">Min: 180ms | Max: 350ms</small></div>
+          </div>
+          <div class="toggleNote">Controls typing/fill delay for automation.</div>
+        </div>
+
+        <div class="settingBox">
+          <div class="toggleRow">
+            <div class="toggleText">Show Favorites in Popup</div>
+            <label class="switch">
+              <input type="checkbox" id="showFavoritesInPopupToggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="toggleNote">Display Favorite Drugs list in popup for quick Apply Selected.</div>
+        </div>
+
+        <div class="settingBox settingBox-wide">
+          <div class="toggleRow">
+            <div class="toggleText">Refill Box</div>
+            <label class="switch">
+              <input type="checkbox" id="refillBoxToggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="toggleNote">Show/hide Refill Box section in popup.</div>
+
+          <div class="subToggleRow" id="refillWithoutProfileRow">
+            <div class="subToggleText">Refill Without Profile</div>
+            <label class="switch switch-sm">
+              <input type="checkbox" id="allowRefillNoProfileToggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="toggleNote">Create temporary profile for refill drugs that do not have a saved profile.</div>
+
+          <div class="subToggleRow" id="refillUseTempAllRow">
+            <div class="subToggleText">Use Prescription Temp for All</div>
+            <label class="switch switch-sm">
+              <input type="checkbox" id="useTempProfilesForAllRefillToggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="toggleNote">Ignore saved profiles during refill and build temporary profiles from the old prescription for all extracted drugs.</div>
+
+          <div class="settingInputRow" id="specialTempDurationRow">
+            <label for="specialTempDurationMaxValue" class="maxDurationLabel">Special temp duration fallback (max value)</label>
+            <input
+              id="specialTempDurationMaxValue"
+              type="text"
+              inputmode="numeric"
+              placeholder="Leave empty for manual duration entry"
+            />
+            <div class="toggleNote">If empty: refill pauses on Duration for non-profile special drug until you type value and leave the field.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnRow">
+        <button id="saveSettings" type="button" class="btn primary">
+          Save Settings
+        </button>
+        <div id="autoDetectStatus" class="hint"></div>
+      </div>
+
+      <div class="programmerInfo">
+        <p><strong>Programmed by:</strong> Dr Moosa Hakami</p>
+        <p><strong>Email:</strong> <a href="mailto:dr.mosa@windowslive.com">dr.mosa@windowslive.com</a></p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- Create / Edit -->
+      <div class="card">
+        <h2>Create / Edit</h2>
+
+        <input type="hidden" id="editId" value="">
+
+        <label>Profile Name</label>
+        <input id="name" placeholder="Metformin profile"/>
+
+        <label>Drug Code</label>
+        <input id="match" placeholder="xxxxxx-xxx-xxx"/>
+
+        <label>Profile Type</label>
+        <select id="profileType">
+          <option value="standard">Standard Medication</option>
+          <option value="special">Special Medication</option>
+        </select>
+
+        <!-- STANDARD -->
+        <div id="standardBox">
+          <div class="row2">
+            <div>
+              <label>Take</label>
+              <input id="take" placeholder="500"/>
+            </div>
+            <div>
+              <label>Times</label>
+              <input id="times" placeholder="3"/>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div>
+              <label>Every</label>
+              <input id="every" placeholder="1"/>
+            </div>
+            <div>
+              <label>Day Type</label>
+              <select id="dayType">
+                <option value="">(leave empty)</option>
+                <option>Day</option>
+                <option>Week</option>
+                <option>Month</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div>
+              <label>For (Duration)</label>
+              <input id="duration" placeholder="28"/>
+            </div>
+            <div>
+              <label>Dose Timing</label>
+              <select id="doseTiming">
+                <option value="">(leave empty)</option>
+                <option>Before Meals</option>
+                <option>Before Dinner</option>
+                <option>After Lunch</option>
+                <option>Before Lunch</option>
+                <option>After Breakfast</option>
+                <option>2 Hours After Meal</option>
+                <option>1 Hour Before Meals</option>
+                <option>30 Minutes Before Meals</option>
+                <option>Not Applicable</option>
+                <option>After Dinner</option>
+                <option>Now</option>
+                <option>In the Afternoon</option>
+                <option>Before Breakfast</option>
+                <option>With Supper meal</option>
+                <option>After Supper meal</option>
+                <option>In the Evening</option>
+                <option>In the Morning</option>
+                <option>With Meals</option>
+                <option>After Meals</option>
+                <option>While wake</option>
+                <option>The hour of sleep</option>
+                <option>Suhoor time</option>
+                <option>As Indicated</option>
+                <option>between breakfast and lunch</option>
+                <option>between dinner and the hour of sleep</option>
+                <option>between lunch and dinner</option>
+                <option>between meals</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div>
+              <label>Refills</label>
+              <input id="refills" placeholder="2"/>
+            </div>
+            <div class="checkbox">
+              <label class="checkLabel">
+                <input type="checkbox" id="clickAdd"/>
+                Click Add after fill
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPECIAL -->
+        <div id="specialBox" class="hidden">
+          <label>Special Instructions</label>
+          <textarea id="specialInstructions" rows="3"
+            placeholder="Will be written into textarea name=&quot;Instructions&quot;"></textarea>
+
+          <div class="row2">
+            <div>
+              <label>Total Quantity</label>
+              <input id="quantity" placeholder="Written into input name=&quot;Quantity&quot;"/>
+            </div>
+            <div>
+              <label>Duration</label>
+              <input id="durationSpecial" placeholder="e.g. 90"/>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div>
+              <label>Refills</label>
+              <input id="refillsSpecial" placeholder="e.g. 1"/>
+            </div>
+            <div class="checkbox">
+              <label class="checkLabel">
+                <input type="checkbox" id="clickAddSpecial"/>
+                Click Add after fill
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="save" type="button" class="btn primary">Save</button>
+          <button id="reset" type="button" class="btn ghost">Reset form</button>
+          <button id="clearAll" type="button" class="btn danger">Delete ALL Profiles</button>
+        </div>
+
+        <!-- FAVORITE DRUGS SELECTOR -->
+        <div class="favoriteDrugsSection">
+          <h3>Favorite Drugs (Max 10)</h3>
+          <p class="hint" style="font-size:11px;margin:4px 0 8px;">Select up to 10 drug codes to appear in popup</p>
+          <div id="favoriteDrugsList" class="favoriteDrugsGrid">
+            <!-- Populated by JavaScript -->
+          </div>
+          <div class="favoriteFooter">
+            <div class="hint" id="favoriteDrugsStatus"></div>
+            <a href="#" id="deselectAllFavoritesLink" class="favoriteLink">Deselect all</a>
+          </div>
+        </div>
+
+        <div class="hint" id="formStatus"></div>
+      </div>
+
+      <!-- Saved Profiles -->
+      <div class="card">
+        <h2>Saved Profiles</h2>
+        <div class="hint" id="drugCountStatus" style="margin-top:0;">Drug count: 0</div>
+
+        <div class="actions">
+          <button id="refresh" type="button" class="btn ghost">Refresh</button>
+          <button id="export" type="button" class="btn ghost">Export JSON</button>
+          <input type="file" id="importFile" accept="application/json" />
+          <button id="import" type="button" class="btn ghost">Import JSON</button>
+        </div>
+
+        <div class="profilesToolbar">
+          <div class="profilesToolItem">
+            <label for="profilesPerPage">Per page</label>
+            <select id="profilesPerPage">
+              <option value="10">10</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+          <div class="profilesToolItem">
+            <label for="profilesSortOrder">Sort by name</label>
+            <select id="profilesSortOrder">
+              <option value="asc">A to Z</option>
+              <option value="desc">Z to A</option>
+            </select>
+          </div>
+          <div class="profilesToolItem profilesSearchItem">
+            <label for="profilesSearch">Search profiles</label>
+            <input id="profilesSearch" type="text" placeholder="Search name or drug code" />
+          </div>
+          <div class="profilesPager">
+            <button id="profilesPrevPage" type="button" class="btn ghost">Prev</button>
+            <span id="profilesPageInfo" class="hint">Page 1 of 1</span>
+            <button id="profilesNextPage" type="button" class="btn ghost">Next</button>
+          </div>
+        </div>
+
+        <div class="tableWrap">
+          <table id="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Match</th>
+                <th>Type</th>
+                <th>Summary</th>
+                <th>Add?</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <pre id="exportBox" class="exportBox"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="profiles.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

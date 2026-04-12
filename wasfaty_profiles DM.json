@@ -1,0 +1,479 @@
+[
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "Before Lunch",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "5",
+      "times": "1"
+    },
+    "id": "60c4ca6a-62c5-454a-9245-d10af18f9b18",
+    "match": "380302-039-074",
+    "name": "linagliptin 5 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "duration": "90",
+      "quantity": "1",
+      "refills": "0",
+      "specialInstructions": "DM"
+    },
+    "id": "5d9638eb-6ede-424f-a9cb-29ad74be03f6",
+    "match": "946201-395-089",
+    "name": "Insulin Pen Needle 4mm",
+    "type": "special"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "After Meals",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "500",
+      "times": "3"
+    },
+    "id": "6431f066-e744-473f-82e2-e04dd57c92ff",
+    "match": "164103-117-074",
+    "name": "metFORMIN HCL 500 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "Before Meals",
+      "duration": "90",
+      "every": "1",
+      "refills": "0",
+      "take": "",
+      "times": "3"
+    },
+    "id": "9f26cb7c-bbbb-41d0-99f2-ca458fd0b934",
+    "match": "235202-130-089",
+    "name": "insulin aspart 100",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Week",
+      "doseTiming": "",
+      "duration": "12",
+      "every": "1",
+      "refills": "0",
+      "take": "50000",
+      "times": "1"
+    },
+    "id": "0f79dc24-4ec9-4842-aff0-b45888bdf563",
+    "match": "348908-006-074",
+    "name": "colecalciferol 50000",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "100",
+      "times": "1"
+    },
+    "id": "3bb427ae-36a6-4927-811e-4dd9746ba9f1",
+    "match": "205003-039-074",
+    "name": "SITagliptin 100 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "90",
+      "every": "1",
+      "refills": "1",
+      "take": "",
+      "times": "1"
+    },
+    "id": "70f14540-ef38-4fda-aa22-4c826665a41b",
+    "match": "208603-130-089",
+    "name": "insulin - glargine 300",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "10",
+      "times": "1"
+    },
+    "id": "f822d4a5-42d1-492d-87e6-27b886cd783c",
+    "match": "536601-039-074",
+    "name": "empagliflozin 10",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "25",
+      "times": "1"
+    },
+    "id": "4fceaee0-83e7-4b92-9491-ca968979e123",
+    "match": "536602-039-074",
+    "name": "empagliflozin 25",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "750",
+      "times": "2"
+    },
+    "id": "085992d7-d539-4f0a-9ff0-e05ce00c659d",
+    "match": "164104-219-074",
+    "name": "metFORMIN HCL 750 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "1",
+      "times": "1"
+    },
+    "id": "86b48163-ebfc-4cb5-81b1-e0859659b043",
+    "match": "945903-039-074",
+    "name": "vitamin B complex",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "20",
+      "times": "1"
+    },
+    "id": "eef14777-c54d-4f85-921b-8cf4dd0e860e",
+    "match": "211703-039-074",
+    "name": "AtorvaSTATin 20 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "10",
+      "times": "1"
+    },
+    "id": "01004c35-2877-4bbc-b2a0-473e91929d9e",
+    "match": "211702-039-074",
+    "name": "AtorvaSTATin 10 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "Before Breakfast",
+      "duration": "28",
+      "every": "1",
+      "refills": "0",
+      "take": "25",
+      "times": "1"
+    },
+    "id": "93ffcc57-b546-46ac-97aa-5e28f4dbe8bb",
+    "match": "172806-117-074",
+    "name": "levothyroxine 25",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "Before Breakfast",
+      "duration": "90",
+      "every": "1",
+      "refills": "0",
+      "take": "50",
+      "times": "1"
+    },
+    "id": "4fa1298b-0823-4c8c-a1b1-48da78f1dea2",
+    "match": "172804-117-074",
+    "name": "levothyroxine 50",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "Before Breakfast",
+      "duration": "90",
+      "every": "1",
+      "refills": "1",
+      "take": "100",
+      "times": "1"
+    },
+    "id": "80c759f4-830a-49a2-9a91-09e219b0b92c",
+    "match": "172805-117-074",
+    "name": "levothyroxine 100",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "Before Breakfast",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "",
+      "times": "1"
+    },
+    "id": "903d3b1d-a22b-4ed9-ad08-520e665cbca4",
+    "match": "114201-117-074",
+    "name": "gliMEPIRide 2 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "Before Breakfast",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "",
+      "times": "1"
+    },
+    "id": "f2a05361-03fd-4407-95ec-3e74f23b3f4c",
+    "match": "164201-200-074",
+    "name": "gliCLAZide 30 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "Before Breakfast",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "",
+      "times": "1"
+    },
+    "id": "9b144bdf-3ac5-44a2-9542-19850ab9ce46",
+    "match": "164203-200-074",
+    "name": "gliCLAZide 60 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "0",
+      "take": "1",
+      "times": "1"
+    },
+    "id": "fb8c611a-a3b1-481c-9a74-214426168559",
+    "match": "106101-117-074",
+    "name": "Multivitamins Tab",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "90",
+      "every": "1",
+      "refills": "1",
+      "take": "",
+      "times": "1"
+    },
+    "id": "1dbfcd79-10fb-4378-929d-e9ca5c4ae2fb",
+    "match": "945301-130-089",
+    "name": "insulin - glargine ( lantus )",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "10",
+      "times": "1"
+    },
+    "id": "c65a8f7b-f4d1-41dd-8c6d-184832bf2fe6",
+    "match": "155602-039-074",
+    "name": "rosuvastatin 10",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "20",
+      "times": "1"
+    },
+    "id": "1a7bf3f2-5257-44ae-a3cd-1008a05e51b6",
+    "match": "155601-039-074",
+    "name": "rosuvastatin 20",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "5",
+      "times": "1"
+    },
+    "id": "2b25d62e-6091-4956-9e3b-10f29212ef74",
+    "match": "379105-396-074",
+    "name": "amLODIPine 5 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "10",
+      "times": "1"
+    },
+    "id": "a2dfad88-dae7-4a20-8600-f0e42aa6fc80",
+    "match": "379102-396-074",
+    "name": "amLODIPine 10 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "90",
+      "every": "1",
+      "refills": "0",
+      "take": "100",
+      "times": "1"
+    },
+    "id": "a18c258a-31d3-4858-a102-0e910229f653",
+    "match": "298001-034-074",
+    "name": "acetylsalicylic acid 100 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "",
+      "times": "1"
+    },
+    "id": "9abdfe63-445d-493e-9da9-d317d2d2682c",
+    "match": "166101-039-074",
+    "name": "valsartan 80 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "40",
+      "times": "1"
+    },
+    "id": "645e708b-ea69-462d-937b-595b60a0d7d6",
+    "match": "220701-117-074",
+    "name": "telmisartan 40 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "80",
+      "times": "1"
+    },
+    "id": "f11d9dd9-45e8-4cc3-9c38-e454e394701f",
+    "match": "220702-117-074",
+    "name": "telmisartan 80 mg",
+    "type": "standard"
+  },
+  {
+    "data": {
+      "clickAdd": true,
+      "dayType": "Day",
+      "doseTiming": "",
+      "duration": "28",
+      "every": "1",
+      "refills": "2",
+      "take": "5",
+      "times": "1"
+    },
+    "id": "767fac41-c749-4ad1-b621-ca023cbdbabb",
+    "match": "555603-039-074",
+    "name": "perindopril arginine 5 mg",
+    "type": "standard"
+  }
+]

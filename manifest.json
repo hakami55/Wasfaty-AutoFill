@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Wasfaty AutoFill",
+  "version": "3.1.50",
+  "version_name": "3.1 beta 50",
+  "description": "Wasfaty AutoFill with Profiles CRUD + Auto Detect.",
+  "host_permissions": ["https://*.wasfaty.sa/*"],
+  "permissions": ["debugger", "tabs", "activeTab", "storage", "alarms"],
+  "action": {
+    "default_title": "Wasfaty AutoFill",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.wasfaty.sa/*"],
+      "js": ["content_autodetect.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

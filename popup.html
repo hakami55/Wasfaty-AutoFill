@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wasfaty AutoFill</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="row">
+      <div>
+        <div class="title">AutoFill</div>
+        <div class="sub">Emergency Kill Switch</div>
+      </div>
+
+      <label class="switch">
+        <input id="toggleEnabled" type="checkbox" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div id="favoritesSection" class="favorites-section hidden">
+      <div class="sectionHead">
+        <h3>Favorite Drugs</h3>
+        <a href="#" id="selectAllFavoritesLink" class="inlineLink">Select all</a>
+      </div>
+      <select id="favoritesList" class="favorites-select" multiple size="5"></select>
+      <button id="applySelectedBtn" class="btn primary" style="width: 100%; margin-top: 10px;">Apply Selected</button>
+    </div>
+
+    <div id="refillSection" class="favorites-section">
+      <div class="sectionHead">
+        <h3>Refill Box</h3>
+        <a href="#" id="selectAllRefillLink" class="inlineLink">Select all</a>
+      </div>
+      <button id="extractRefillBtn" class="btn" style="width:100%;">Refill this Prescription</button>
+      <div id="refillPanel" class="hidden" style="margin-top:8px;">
+        <select id="refillList" class="favorites-select" multiple size="5"></select>
+        <div class="btns" style="margin-top:8px;">
+          <button id="refillNowBtn" class="btn primary" disabled>Refill Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="btns">
+      <button id="btnAutoFill" class="btn primary">Auto Fill</button>
+      <button id="btnProfile" class="btn">Profile</button>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

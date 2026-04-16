@@ -23,25 +23,11 @@ To use the extension in Chrome:
 3. Click **Load unpacked**
 4. Select the extension folder
 
-Recommended folder:
-
-- Use [`3.3 stable`](./3.3%20stable) if you want the packaged final snapshot
-- Or use the repository root if you want to keep editing the code directly
-
 After loading:
 
 1. Pin the extension from the Chrome extensions menu if needed
 2. Open Wasfaty
 3. Use the popup for quick actions or open the `Profiles` page to manage saved profiles
-
-## Project files
-
-- [`3.3 stable`](./3.3%20stable): clean final extension copy
-- [`manifest.json`](./manifest.json): Chrome extension manifest
-- [`background.js`](./background.js): main automation and refill logic
-- [`content_autodetect.js`](./content_autodetect.js): watches the Wasfaty page and triggers auto fill
-- [`popup.html`](./popup.html), [`popup.js`](./popup.js), [`popup.css`](./popup.css): popup UI
-- [`profiles.html`](./profiles.html), [`profiles.js`](./profiles.js), [`profiles.css`](./profiles.css): profile management page
 
 ## Profile page guide
 

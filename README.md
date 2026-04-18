@@ -16,6 +16,7 @@ Programmed by **Dr. Moosa Hakami**
 
 ## Chrome installation
 
+
 To use the extension in Chrome:
 
 1. Open Chrome and go to `chrome://extensions/`

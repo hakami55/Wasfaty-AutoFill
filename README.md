@@ -30,6 +30,7 @@ After loading:
 1. Pin the extension from the Chrome extensions menu if needed
 2. Open Wasfaty
 3. Use the popup for quick actions or open the `Profiles` page to manage saved profiles
+<img width="1920" height="1040" alt="3" src="https://github.com/user-attachments/assets/fabd30f0-5708-4595-9857-41026216b606" />
 
 ## Profile page guide
 

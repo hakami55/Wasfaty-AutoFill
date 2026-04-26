@@ -23,6 +23,7 @@ To use the extension in Chrome:
 2. Turn on **Developer mode** from the top-right corner.
 3. Click **Load unpacked**
 4. Select the extension folder
+<img width="1920" height="1040" alt="2" src="https://github.com/user-attachments/assets/7b7bc93e-a339-4ddd-89e1-20ce21d97180" />
 
 After loading:
 

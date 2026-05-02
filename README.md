@@ -15,7 +15,7 @@ Programmed by **Dr. Moosa Hakami**
 - Supports refill using saved profiles or temporary profiles built from old prescription instructions.
 
 ## Chrome installation
-
+[![Wasfaty AutoFill Tutorial](https://thumbs.video-to-markdown.com/b7cabe17.jpg)](https://youtu.be/_npCOoiTB20)
 
 To use the extension in Chrome:
 

@@ -1,3 +1,4 @@
+
 # Wasfaty Autofill
 
 `Wasfaty Autofill` is a Chrome extension that helps speed up medication entry and refill work on Wasfaty by using saved profiles, favorite drugs, refill extraction from previous prescriptions, and controlled automation.
@@ -37,6 +38,7 @@ After loading:
 The `Profiles` page is the local control center for the extension.
 
 ### Settings
+<img width="1920" height="1040" alt="4" src="https://github.com/user-attachments/assets/9522a560-fd63-4403-8f35-4c06894b1d26" />
 
 - **Auto Detect**: turns automatic profile fill on or off when a selected drug changes on the Wasfaty page.
 - **Auto-Focus Drug**: moves focus to the next drug field after saving, to speed up repeated entry.

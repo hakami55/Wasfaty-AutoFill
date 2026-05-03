@@ -39,6 +39,7 @@ The `Profiles` page is the local control center for the extension.
 
 ### Settings
 <img width="1920" height="1040" alt="4" src="https://github.com/user-attachments/assets/9522a560-fd63-4403-8f35-4c06894b1d26" />
+<img width="1920" height="1040" alt="5" src="https://github.com/user-attachments/assets/16cf0a8d-1b8f-4bc4-8b97-c5fe69a6c341" />
 
 - **Auto Detect**: turns automatic profile fill on or off when a selected drug changes on the Wasfaty page.
 - **Auto-Focus Drug**: moves focus to the next drug field after saving, to speed up repeated entry.

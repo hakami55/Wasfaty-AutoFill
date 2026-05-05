@@ -208,20 +208,20 @@
     }
   },
   {
-    "data": {
-      "clickAdd": true,
-      "dayType": "Day",
-      "doseTiming": "",
-      "duration": "90",
-      "every": "1",
-      "refills": "1",
-      "take": "",
-      "times": "1"
-    },
     "id": "70f14540-ef38-4fda-aa22-4c826665a41b",
-    "match": "208603-130-089",
     "name": "insulin - glargine 300",
-    "type": "standard"
+    "match": "208603-130-089",
+    "type": "standard",
+    "data": {
+      "take": "",
+      "times": "1",
+      "every": "1",
+      "duration": "30",
+      "doseTiming": "",
+      "dayType": "Day",
+      "refills": "2",
+      "clickAdd": true
+    }
   },
   {
     "data": {

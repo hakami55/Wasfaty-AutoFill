@@ -192,20 +192,20 @@
     "type": "standard"
   },
   {
-    "data": {
-      "clickAdd": true,
-      "dayType": "Day",
-      "doseTiming": "",
-      "duration": "90",
-      "every": "1",
-      "refills": "1",
-      "take": "",
-      "times": "1"
-    },
     "id": "1dbfcd79-10fb-4378-929d-e9ca5c4ae2fb",
-    "match": "945301-130-089",
     "name": "insulin - glargine ( lantus )",
-    "type": "standard"
+    "match": "945301-130-089",
+    "type": "standard",
+    "data": {
+      "take": "",
+      "times": "1",
+      "every": "1",
+      "duration": "30",
+      "doseTiming": "",
+      "dayType": "Day",
+      "refills": "2",
+      "clickAdd": true
+    }
   },
   {
     "data": {
